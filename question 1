@@ -1,0 +1,5 @@
+# SQL code used to find country with most recent year of independence
+SELECT Name FROM country WHERE IndepYear = (SELECT MAX(IndepYear) FROM country);
+
+# Answer to question: Palau
+
